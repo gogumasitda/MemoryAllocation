@@ -1,12 +1,10 @@
-#define MAX_STACK_SIZE (100)
-#define EMPTY_STACK (0)
-#define FAIL_SIGNAL ((1 << 8) - 1)
-
+#pragma once
+#include "size_type_definition.h"
 #include <stdint.h>
 
 typedef struct _Stack {
 	uint8_t _top;
-	uint8_t _container[MAX_STACK_SIZE];
+	uint8_t _container[MAX_A_SIZE];
 } Stack;
 
 uint8_t stack_pop(Stack *stack);
