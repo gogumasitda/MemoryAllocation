@@ -9,6 +9,8 @@ typedef struct _A {
 	uint16_t reference_cnt;
 } A;
 
+A memory_pool[MAX_A_SIZE];
+
 uint8_t create_new_A();
 bool destroy_A();
 bool release_A();
