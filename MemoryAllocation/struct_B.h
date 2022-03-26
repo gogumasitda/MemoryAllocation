@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <stdbool.h>
+#include <malloc.h>
 
 typedef struct _B {
 	uint8_t A_index;
