@@ -1,4 +1,5 @@
 #pragma once
+#include "struct_A.h"
 #include <stdint.h>
 #include <stdbool.h>
 #include <malloc.h>
