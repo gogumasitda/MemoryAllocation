@@ -1,6 +1,5 @@
-#define SETTING_VALUE_SIZE (1 << 16)
-
 #pragma once
+#include "size_type_definition.h"
 #include <stdbool.h>
 #include <stdint.h>
 
