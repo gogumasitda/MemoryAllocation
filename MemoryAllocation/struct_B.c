@@ -27,7 +27,15 @@ bool destory_this(B* B_object) {
 }
 
 bool decrease_reference_count_of(uint8_t A_object_index) {
+	A* reference = memory_pool + A_object_index;
 	
+	if (reference->reference_cnt <= 0) return false;
+	reference->reference_cnt--;
+
+	if (reference->is_alive == false && reference->reference_cnt == 0) {
+		destroy_A(A_object_index);
+	}
+
 	return true;
 }
 
