@@ -14,6 +14,7 @@ bool create_at(B* B_object, uint8_t A_object_index) {
 void initialize_datas_of(B* B_object, uint8_t A_object_index) {
 	B_object->A_index = A_object_index;
 	B_object->count_data = 0;
+	increase_reference_count_of(A_object_index);
 }
 
 bool destory_this(B* B_object) {
@@ -22,6 +23,14 @@ bool destory_this(B* B_object) {
 	if (isSuccessToDecrease == false) return false;
 
 	free(B_object);
+
+	return true;
+}
+
+bool increase_reference_count_of(uint8_t A_object_index) {
+	A* reference = memory_pool + A_object_index;
+
+	reference->reference_cnt++;
 
 	return true;
 }
