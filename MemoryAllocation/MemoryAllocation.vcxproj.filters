@@ -14,4 +14,32 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_A.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_B.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="size_type_definition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="struct_A.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="struct_B.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

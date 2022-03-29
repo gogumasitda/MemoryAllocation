@@ -138,6 +138,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.c" />
+    <ClCompile Include="stack.c" />
+    <ClCompile Include="struct_A.c" />
+    <ClCompile Include="struct_B.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="size_type_definition.h" />
+    <ClInclude Include="stack.h" />
+    <ClInclude Include="struct_A.h" />
+    <ClInclude Include="struct_B.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
