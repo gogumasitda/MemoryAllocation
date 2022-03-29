@@ -33,7 +33,7 @@ bool decrease_reference_count_of(uint8_t A_object_index) {
 	reference->reference_cnt--;
 
 	if (reference->is_alive == false && reference->reference_cnt == 0) {
-		destroy_A(A_object_index);
+		release_A(A_object_index);
 	}
 
 	return true;
