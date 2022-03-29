@@ -12,6 +12,6 @@ typedef struct _A {
 
 A memory_pool[MAX_A_SIZE];
 
-uint8_t create_new_A();
-bool destroy_A();
-bool release_A();
+uint8_t create_new_A(Stack *index_stack, char *setting_value_given);
+bool destroy_A(uint8_t index);
+bool release_A(uint8_t index);
