@@ -48,3 +48,7 @@ uint8_t release_A(uint8_t index) {
 
 	return true;
 }
+
+void change_A_setting_value(uint8_t index, char* setting_value_given) {
+	strcpy(memory_pool[index].setting_value, setting_value_given);
+}

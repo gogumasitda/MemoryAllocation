@@ -16,3 +16,4 @@ Stack index_stack;
 uint8_t create_new_A(char *setting_value_given);
 uint8_t destroy_A(uint8_t index);
 uint8_t release_A(uint8_t index);
+void change_A_setting_value(uint8_t index);
