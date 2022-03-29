@@ -1,5 +1,9 @@
 #include "struct_A.h"
 
+void initialize_stack() {
+	stack_init(&index_stack);
+}
+
 void strcpy(char *dest, char *src) {
 	while (*src) {
 		*dest++ = *src++;
@@ -55,3 +59,4 @@ bool change_A_setting_value(uint8_t index, char* setting_value_given) {
 
 	return true;
 }
+
