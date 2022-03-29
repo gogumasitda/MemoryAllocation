@@ -1,7 +1,8 @@
 #pragma once
-#include "size_type_definition.h"
 #include <stdbool.h>
 #include <stdint.h>
+#include "size_type_definition.h"
+#include "stack.h"
 
 typedef struct _A {
 	bool is_alive;

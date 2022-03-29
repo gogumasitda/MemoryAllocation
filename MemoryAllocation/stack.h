@@ -1,6 +1,6 @@
 #pragma once
-#include "size_type_definition.h"
 #include <stdint.h>
+#include "size_type_definition.h"
 
 typedef struct _Stack {
 	uint8_t _top;
